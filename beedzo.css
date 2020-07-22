@@ -1,0 +1,103 @@
+h1 {
+	margin: 0px;
+	padding: 0px;
+}
+
+.header {
+  position: static;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  height: 10%;
+  vertical-align: text-top;
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  text-align: center;
+  border-bottom: 2px solid lightslategrey;
+}
+
+.sidebar {
+  position: fixed;
+  border-right: 2px solid transparent;
+  width: 0%;
+  height: 90%;
+  transition: 0.5s;
+  overflow-x: hidden;
+}
+
+.sidebarItems {
+  position: relative;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0rem;
+  background-color: #242525;
+  text-align: center;
+  color: white;
+}
+
+.shadow {
+	font-size: 80px;
+	text-shadow: 1px 1px #00fff9, 
+                2px 2px #00fff9, 
+                3px 3px #00fff9, 
+                4px 4px #00fff9, 
+                5px 5px #00fff9, 
+                6px 6px #00fff9;
+	color: #0055ff;
+	
+}
+
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+	color: white;
+  background-color:	black;
+}
+
+#Test {
+  background-color: black;
+  height: 50%;
+  width:100%;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+#Subdiv {
+  background-color: red;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+
+#toplinks {
+  border: 10px;
+  border-color: red;
+  height: 6%;
+}
+
+#menuButton {
+  font-size: 200%;
+  background: blue;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}

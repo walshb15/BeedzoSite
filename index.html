@@ -12,6 +12,9 @@
 <div class="sidebar" id="sideSections">
     <div class="sidebarItems">
         <h3>Sections</h3>
+        <a href="#home" onclick="openWelcome()">Home</a>
+        <a href="#about" onclick="openAbout()">About</a>
+        <a href="#proj">Projects</a>
         <button id="closebutt" onclick="closeSidebar()">Close</button>
     </div>
 </div>
@@ -20,11 +23,23 @@
 </span>
 <div class="mainContent">
     <div id="WelcomePage">
-        <img src="OutrunMountains.png" alt="Hackerman" id="bgImg">
+        <img src="OutrunMountains.png" alt="Hackerman" class="bgImg">
         <div id="WelcomeContent">
-            <h1>WELCOME TO THE REALM</h1>
-            <br>
-            <p>This is the official site of Brendan Walsh.</p>
+            <div id="WelcomeText">
+                <h1>WELCOME TO THE REALM</h1>
+                <br>
+                <p>This is the official site of Brendan Walsh.</p>
+            </div>
+        </div>
+    </div>
+    <div id="AboutPage">
+        <img src="orange_wireframe.png" alt="Hackerman" class="bgImg">
+        <div id="WelcomeContent">
+            <div id="WelcomeText">
+                <h1>ABOUT ME</h1>
+                <br>
+                <p>This is the official site of Brendan Walsh.</p>
+            </div>
         </div>
     </div>
 </div>

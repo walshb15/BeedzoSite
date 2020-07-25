@@ -26,4 +26,32 @@
         }
         document.getElementById("menuButton").style.opacity = "0%";
     }
+
+    function openWelcome() {
+        let root = document.documentElement;
+        root.style.setProperty('--primaryColor', "#0055ff");
+        root.style.setProperty('--shadowColor',  '#00fff9')
+        let page = document.getElementById("WelcomePage");
+        page.style.opacity = 1;
+        closeAbout();
+    }
+
+    function closeWelcome() {
+        let page = document.getElementById("WelcomePage");
+        page.style.opacity = 0;
+    }
+
+    function openAbout() {
+        let root = document.documentElement;
+        root.style.setProperty('--primaryColor', "#ef4502");
+        root.style.setProperty('--shadowColor',  '#f77b00')
+        let page = document.getElementById("AboutPage");
+        page.style.opacity = 1;
+        closeWelcome();
+    }
+
+    function closeAbout() {
+        let page = document.getElementById("AboutPage");
+        page.style.opacity = 0;
+    }
 }

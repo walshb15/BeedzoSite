@@ -54,4 +54,14 @@
         let page = document.getElementById("AboutPage");
         page.style.opacity = 0;
     }
+
+    function openProjects() {
+        let root = document.documentElement;
+        root.style.setProperty('--primaryColor', "#026b18");
+        root.style.setProperty('--shadowColor',  '#00fcb4')
+    }
+
+    function closeProjects() {
+
+    }
 }

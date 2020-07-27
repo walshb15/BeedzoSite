@@ -169,12 +169,29 @@ html, body {
 }
 
 #ProjPage {
-  position: absolute;
+  position: relative;
   z-index: 7;
   height: 100%;
   width: 100%;
   opacity: 0;
   transition: 0.8s;
+}
+
+.blur {
+  position: absolute;
+  z-index: 7;
+  height: 100%;
+  width: 100%;
+  transition: 0.8s;
   background-image: url("green_gridTile.png");
   background-repeat: round;
+  filter: blur(1px);
+}
+
+.PageTitle {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  z-index: 8;
 }

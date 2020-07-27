@@ -167,3 +167,14 @@ html, body {
   opacity: 0;
   transition: 0.8s;
 }
+
+#ProjPage {
+  position: absolute;
+  z-index: 7;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.8s;
+  background-image: url("green_gridTile.png");
+  background-repeat: round;
+}

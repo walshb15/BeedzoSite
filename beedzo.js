@@ -34,6 +34,7 @@
         let page = document.getElementById("WelcomePage");
         page.style.opacity = 1;
         closeAbout();
+        closeProjects();
     }
 
     function closeWelcome() {
@@ -48,6 +49,7 @@
         let page = document.getElementById("AboutPage");
         page.style.opacity = 1;
         closeWelcome();
+        closeProjects();
     }
 
     function closeAbout() {
@@ -58,10 +60,15 @@
     function openProjects() {
         let root = document.documentElement;
         root.style.setProperty('--primaryColor', "#026b18");
-        root.style.setProperty('--shadowColor',  '#00fcb4')
+        root.style.setProperty('--shadowColor',  '#00fcb4');
+        let page = document.getElementById("ProjPage");
+        page.style.opacity = 1;
+        closeWelcome();
+        closeAbout();
     }
 
     function closeProjects() {
-
+        let page = document.getElementById("ProjPage");
+        page.style.opacity = 0;
     }
 }

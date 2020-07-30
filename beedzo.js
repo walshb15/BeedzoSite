@@ -68,7 +68,55 @@
     }
 
     function closeProjects() {
+        closeProjAll();
         let page = document.getElementById("ProjPage");
         page.style.opacity = 0;
+    }
+
+    function openWheelProj() {
+        let page = document.getElementById("WheelContainer");
+        openGenericProj(page);
+    }
+
+    function openWingProj() {
+        let page = document.getElementById("WingContainer");
+        openGenericProj(page);
+    }
+
+    function openCretProj() {
+        let page = document.getElementById("CretContainer");
+        openGenericProj(page);
+    }
+
+    function openGenericProj(proj) {
+        if (proj.style.opacity != 1) {
+            proj.style.opacity = 1;
+            proj.style.height = "100%";
+            closeProjOthers(proj);
+        }
+        else {
+            closeProjSelf(proj);
+        }
+    }
+
+    function closeProjSelf(page) {
+        page.style.opacity = 0;
+        page.style.height = "0%";
+    }
+
+    function closeProjOthers(page) {
+        let pages = document.getElementsByClassName("ProjContainer");
+        for (i = 0; i < pages.length; ++i) {
+            if (pages[i] != page) {
+                closeProjSelf(pages[i]);
+            }
+        }
+    }
+
+    function closeProjAll() {
+        let pages = document.getElementsByClassName("ProjContainer");
+        for (i = 0; i < pages.length; ++i) {
+            closeProjSelf(pages[i]);
+        }
     }
 }

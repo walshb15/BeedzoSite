@@ -210,6 +210,8 @@ html, body {
   width: 80%;
   height: 100%;
   padding-left: 10%;
+  transition: 0.2s;
+  opacity: 0;
 }
 
 .ProjChild {
@@ -221,8 +223,11 @@ html, body {
 .ProjBgImg {
   width: 100%;
   height: 100%;
-  filter: blur(2px);
   object-fit: cover;
+}
+
+.ProjBgImg:hover {
+  filter: blur(2px);
 }
 
 .ProjScroller {
@@ -249,4 +254,16 @@ html, body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+#WheelContainer {
+  height: 0%;
+}
+
+#WingContainer {
+  height:0%;
+}
+
+#CretContainer {
+  height:0%;
 }

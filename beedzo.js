@@ -10,7 +10,7 @@
         {
             items[i].style.opacity = "0";
         }
-        document.getElementById("menuButton").style.opacity = "100%";
+        document.getElementById("menuButton").style.opacity = 1;
     }
 
     function openSidebar() {
@@ -24,7 +24,7 @@
         {
             items[i].style.opacity = "1";
         }
-        document.getElementById("menuButton").style.opacity = "0%";
+        document.getElementById("menuButton").style.opacity = 0;
     }
 
     function openWelcome() {

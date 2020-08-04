@@ -59,7 +59,7 @@ h1 {
 }
 
 .shadow {
-	font-size: 80px;
+	font-size: 8vh;
 	text-shadow: 1px 1px var(--shadowColor), 
                 2px 2px var(--shadowColor), 
                 3px 3px var(--shadowColor), 
@@ -212,12 +212,14 @@ html, body {
   padding-left: 10%;
   transition: 0.2s;
   opacity: 0;
+  overflow-y: hidden;
 }
 
 .ProjChild {
   width: 50%;
   height: 100%;
   float: left;
+  overflow-y: auto;
 }
 
 .ProjBgImg {

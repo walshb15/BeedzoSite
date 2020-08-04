@@ -33,6 +33,7 @@
         root.style.setProperty('--shadowColor',  '#00fff9')
         let page = document.getElementById("WelcomePage");
         page.style.opacity = 1;
+        page.style.visibility = "visible";
         closeAbout();
         closeProjects();
     }
@@ -40,6 +41,7 @@
     function closeWelcome() {
         let page = document.getElementById("WelcomePage");
         page.style.opacity = 0;
+        page.style.visibility = "hidden";
     }
 
     function openAbout() {
@@ -48,6 +50,7 @@
         root.style.setProperty('--shadowColor',  '#f77b00')
         let page = document.getElementById("AboutPage");
         page.style.opacity = 1;
+        page.style.visibility = "visible";
         closeWelcome();
         closeProjects();
     }
@@ -55,6 +58,7 @@
     function closeAbout() {
         let page = document.getElementById("AboutPage");
         page.style.opacity = 0;
+        page.style.visibility = "hidden";
     }
 
     function openProjects() {
@@ -63,6 +67,7 @@
         root.style.setProperty('--shadowColor',  '#00fcb4');
         let page = document.getElementById("ProjPage");
         page.style.opacity = 1;
+        page.style.visibility = "visible";
         closeWelcome();
         closeAbout();
     }
@@ -71,6 +76,7 @@
         closeProjAll();
         let page = document.getElementById("ProjPage");
         page.style.opacity = 0;
+        page.style.visibility = "hidden";
     }
 
     function openWheelProj() {

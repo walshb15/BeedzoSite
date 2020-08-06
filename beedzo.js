@@ -97,6 +97,7 @@
     function openGenericProj(proj) {
         if (proj.style.opacity != 1) {
             proj.style.opacity = 1;
+            proj.style.visibility = "visible";
             proj.style.height = "100%";
             closeProjOthers(proj);
         }
@@ -108,6 +109,7 @@
     function closeProjSelf(page) {
         page.style.opacity = 0;
         page.style.height = "0%";
+        page.style.visibility = "hidden";
     }
 
     function closeProjOthers(page) {

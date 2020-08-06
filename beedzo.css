@@ -212,6 +212,7 @@ html, body {
   padding-left: 10%;
   transition: 0.2s;
   opacity: 0;
+  visibility: hidden;
   overflow-y: hidden;
 }
 
@@ -272,8 +273,10 @@ html, body {
 
 .ScrollItem {
   height: 100%;
+  width: auto;
   display: inline-block;
   cursor: pointer;
+  white-space: normal;
 }
 
 .ScrollItem:hover {

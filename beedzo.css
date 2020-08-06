@@ -283,11 +283,6 @@ html, body {
   opacity: 0.8;
 }
 
-.ScrollBgImg {
-  max-height: 100%;
-  object-fit: cover;
-}
-
 #WheelContainer {
   height: 0%;
 }

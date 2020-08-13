@@ -82,16 +82,19 @@
     function openWheelProj() {
         let page = document.getElementById("WheelContainer");
         openGenericProj(page);
+        closeSidebar();
     }
 
     function openWingProj() {
         let page = document.getElementById("WingContainer");
         openGenericProj(page);
+        closeSidebar();
     }
 
     function openCretProj() {
         let page = document.getElementById("CretContainer");
         openGenericProj(page);
+        closeSidebar();
     }
 
     function openGenericProj(proj) {

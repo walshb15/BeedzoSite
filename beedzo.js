@@ -36,6 +36,7 @@
         page.style.visibility = "visible";
         closeAbout();
         closeProjects();
+        closeSkills();
     }
 
     function closeWelcome() {
@@ -53,6 +54,7 @@
         page.style.visibility = "visible";
         closeWelcome();
         closeProjects();
+        closeSkills();
     }
 
     function closeAbout() {
@@ -70,11 +72,32 @@
         page.style.visibility = "visible";
         closeWelcome();
         closeAbout();
+        closeSkills();
     }
 
     function closeProjects() {
         closeProjAll();
         let page = document.getElementById("ProjPage");
+        page.style.opacity = 0;
+        page.style.visibility = "hidden";
+    }
+
+    function openSkills() {
+        let root = document.documentElement;
+        root.style.setProperty('--primaryColor', "#8c1eff");
+        root.style.setProperty('--shadowColor',  '#f222ff');
+        //root.style.setProperty('--primaryColor', "#f222ff");
+        //root.style.setProperty('--shadowColor', "#8c1eff");
+        let page = document.getElementById("SkillsPage");
+        page.style.opacity = 1;
+        page.style.visibility = "visible";
+        closeWelcome();
+        closeAbout();
+        closeProjects();
+    }
+
+    function closeSkills() {
+        let page = document.getElementById("SkillsPage");
         page.style.opacity = 0;
         page.style.visibility = "hidden";
     }

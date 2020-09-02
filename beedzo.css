@@ -173,6 +173,7 @@ html, body {
   width: 100%;
   opacity: 0;
   transition: 0.8s;
+  visibility: hidden;
 }
 
 #ProjPage {
@@ -182,6 +183,7 @@ html, body {
   width: 100%;
   opacity: 0;
   transition: 0.8s;
+  visibility: hidden;
 }
 
 .blur {

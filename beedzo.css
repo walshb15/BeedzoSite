@@ -292,6 +292,11 @@ html, body {
   white-space: normal;
 }
 
+.SkillsList {
+  text-align: left;
+  padding-left: 48%;
+}
+
 .ScrollItem:hover {
   opacity: 0.8;
 }

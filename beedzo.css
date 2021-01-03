@@ -176,6 +176,16 @@ html, body {
   visibility: hidden;
 }
 
+#SkillsPage {
+  position: absolute;
+  z-index: 6;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.8s;
+  visibility: hidden;
+}
+
 #ProjPage {
   position: relative;
   z-index: 9;

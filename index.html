@@ -1,172 +1,174 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="shortcut icon" type="image/x-icon" href="bw.ico" />
-<title>Beedzo</title>
-<link rel="stylesheet" type="text/css" href="beedzo.css">
-<meta property='og:title' content='Beedzo'/>
-<meta property="og:image" content="OutrunMountains.png" />
-<meta property='og:description' content='The official website of Brendan Walsh'/>
-<meta property='og:url' content='https://walshb15.github.io/BeedzoSite/'/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="bw.ico" />
+    <title>Beedzo</title>
+    <link rel="stylesheet" type="text/css" href="beedzo.css">
+    <meta property='og:title' content='Beedzo'/>
+    <meta property="og:image" content="OutrunMountains.png" />
+    <meta property='og:description' content='The official website of Brendan Walsh'/>
+    <meta property='og:url' content='https://walshb15.github.io/BeedzoSite/'/>
 </head>
 <body>
-<div class="header">
-<h1 class="shadow">Beedzo</h1>
-</div>
-<div class="sidebar" id="sideSections">
-    <div class="sidebarItems">
-        <span id="closebutt" onclick="closeSidebar()">X</span>
-        <h3><i><ins>Sections</ins></i></h3>
-        <a href="#" onclick="openWelcome()">Home</a>
-        <a href="#" onclick="openAbout()">About</a>
-        <a href="#" onclick="openProjects()">Projects</a>
-        <a href="#" onclick="openSkills()">Skills</a>
+    <div class="header">
+    <h1 class="shadow">Beedzo</h1>
     </div>
-</div>
-<span class="buttonContainer">
-    <span id="menuButton" onclick="openSidebar()">&#9776</span>
-</span>
-<div class="mainContent">
-    <div id="WelcomePage">
-        <img src="OutrunMountains.png" alt="Hackerman" class="bgImg">
-        <div class="WelcomeContent">
-            <div class="WelcomeText">
-                <h1>WELCOME TO BEEDZO</h1>
-                <br>
-                <p>This is the official site of Brendan Walsh.</p>
-                <p>Click the sidebar button in the upper left to navigate the website.</p>
-            </div>
+    <div class="sidebar" id="sideSections">
+        <div class="sidebarItems">
+            <span id="closebutt" onclick="closeSidebar()">X</span>
+            <h3><i><ins>Sections</ins></i></h3>
+            <a href="#" onclick="openWelcome()">Home</a>
+            <a href="#" onclick="openAbout()">About</a>
+            <a href="#" onclick="openProjects()">Projects</a>
+            <a href="#" onclick="openSkills()">Skills</a>
         </div>
     </div>
-    <div id="AboutPage">
-        <img src="orange_wireframe.png" alt="Hackerman" class="bgImg">
-        <div class="WelcomeContent">
-            <div class="WelcomeText">
-                <h1>ABOUT</h1>
-                <br>
-                <p>My name is Brendan Walsh. I am a student at Michigan State University who is studying computer science and game design.
-                    For the longest time, I have been interested in technology, and more specifically, video games. In high school, I decided
-                    that I wanted to try my hand at game development and set out to learn the required skills to do so. I started teaching myself
-                    several relevant pieces of game development, such as 3D modeling, level design, and of course, programming.
-                    The language I started out with was Python, and I was instantly captivated. I made simple text games at first and kept building up my skills from there.
-                    I then moved on to messing around with game engines, such as Unity, Unreal, and Source. I began taking courses for computer science and game design
-                    at my high school. I knew that I had found my passion and my path in life, and it was to become a programmer.
-                    Over the years, I have worked on many projects, both in school and out of school, I have attended many hackathons, I have done all I can to further
-                    my knowledge in this amazing field.
-                </p>
-                <p>
-                    Several years have passed since I chose to become a programmer, and I am now a senior at Michigan State University. Soon I will enter the real world and 
-                    begin putting my skills to use. I hope that I can make the world a better place, and that I can continue to learn even more.
-                </p>
-                <p>
-                    This website was built as a means of teaching myself web development. I had some basic knowledge of HTML, CSS, and Javascript before, but I never really got deep into it,
-                    until now.
-                </p>
-                <p>Also, you may be wondering "Beedzo? What's a Beedzo?" Well... it was my childhood nickname.</p>
-            </div>
-        </div>
-    </div>
-    <div id="SkillsPage">
-        <img src="OutrunSun.png" alt="Hackerman" class="bgImg">
-        <div class="WelcomeText" style="width: 100%;">
-            <h1>SKILLS</h1>
-            <h3>Languages</h2>
-            <ul class="SkillsList">
-                <li>Python</li>
-                <li>C</li>
-                <li>C++</li>
-                <li>C#</li>
-                <li>SQLite</li>
-                <li>JavaScript</li>
-                <li>Java</li>
-                <li>HTML/CSS</li>
-                <li>ARM Assembly</li>
-            </ul>
-            <h3>Game Engines/Game Tools</h2>
-            <ul class="SkillsList">
-                <li>Unity</li>
-                <li>Godot</li>
-                <li>Source</li>
-                <li>Unreal</li>
-                <li>GameMaker Studio</li>
-                <li>LithTech Talon</li>
-            </ul>
-            <h3>Other Software and Tools</h2>
-            <ul class="SkillsList">
-                <li>GitHub</li>
-                <li>UML</li>
-                <li>Linux/Unix</li>
-                <li>Blender (used to make all the backgrounds for this site)</li>
-                <li>GIMP</li>
-            </ul>
-            <h3>Other Skills</h2>
-            <ul class="SkillsList">
-                <li>Agile/SCRUM development</li>
-                <li>3D modeling</li>
-                <li>Game level design</li>
-                <li>Strong teamwork skills</li>
-                <li>Quick learner</li>
-            </ul>
-            <br>
-        </div>
-    </div>
-    <div id="ProjPage">
-        <div class="blur"></div>
-        <div class="PageTitle">
-            <h1>Projects</h1>
-        </div>
-        <br><br><br><br><br><br>
-        <div class="ProjPanel">
-            <div class="ProjScroller">
-                <img src="https://raw.githubusercontent.com/walshb15/BestWorstWheel/master/demonstrationImage.png" class="ScrollItem" onclick="openWheelProj()">
-                <img src="https://m.gjcdn.net/game-screenshot/800/2484405-6dgwi5jm-v4.jpg" class="ScrollItem" onclick="openWingProj()">
-                <img src="https://m.gjcdn.net/game-screenshot/800/2607759-zhfgwznv-v4.jpg" class="ScrollItem" onclick="openCretProj()">      
-            </div>
-            <div class="ProjContainer" id="WheelContainer">
-                <div class="ProjChild" style="background-color: lawngreen;">
-                    <h1>Best Worst Wheel</h1>
-                    <p>A Wheel of Fortune style graphical selection wheel. 
-                        The user spins it, and it will eventually come to a stop on an item on the wheel. 
-                        The user can add or delete items from the wheel, as well as spin it. 
-                        Items that are added are stored in a local SQLite database, so they are loaded again when the user closes and reopens the program.</p>
-                </div>
-                <div class="ProjPic">
-                    <a href="https://github.com/walshb15/BestWorstWheel" class="ProjLink">VIEW</a>
-                    <img src="https://raw.githubusercontent.com/walshb15/BestWorstWheel/master/demonstrationImage.png" alt="Hackerman" class="ProjBgImg">
+    <span class="buttonContainer">
+        <span id="menuButton" onclick="openSidebar()">&#9776;</span>
+    </span>
+    <div class="mainContent">
+        <div id="WelcomePage">
+            <img src="OutrunMountains.png" alt="Hackerman" class="bgImg">
+            <div class="WelcomeContent">
+                <div class="WelcomeText">
+                    <h1>WELCOME TO BEEDZO</h1>
+                    <br>
+                    <p>This is the official site of Brendan Walsh.</p>
+                    <p>Click the sidebar button in the upper left to navigate the website.</p>
                 </div>
             </div>
-            <div class="ProjContainer" id="WingContainer">
-                <div class="ProjChild" style="background-color: #FF1493;">
-                    <h1>Wingman From the Other Side</h1>
-                    <p>Voted as one of the most innovative game projects of MI445 in Fall semester 2019, Wingman from the Other Side is a
-                        physics based puzzle game built with Unity engine. You play as Laramie the ghost, whose job is to possess
-                        objects in each level to bring a couple together. I provided a lot of the underlying C# programming for the
-                        game's systems, and also helped with various other aspects of the game. I particularly enjoyed working on this game, and had a great experience with the team I worked
-                        on it with.
+        </div>
+        <div id="AboutPage">
+            <img src="orange_wireframe.png" alt="Hackerman" class="bgImg">
+            <div class="WelcomeContent">
+                <div class="WelcomeText">
+                    <h1>ABOUT</h1>
+                    <br>
+                    <p>My name is Brendan Walsh. I am a student at Michigan State University who is studying computer science and game design.
+                        For the longest time, I have been interested in technology, and more specifically, video games. In high school, I decided
+                        that I wanted to try my hand at game development and set out to learn the required skills to do so. I started teaching myself
+                        several relevant pieces of game development, such as 3D modeling, level design, and of course, programming.
+                        The language I started out with was Python, and I was instantly captivated. I made simple text games at first and kept building up my skills from there.
+                        I then moved on to messing around with game engines, such as Unity, Unreal, and Source. I began taking courses for computer science and game design
+                        at my high school. I knew that I had found my passion and my path in life, and it was to become a programmer.
+                        Over the years, I have worked on many projects, both in school and out of school, I have attended many hackathons, I have done all I can to further
+                        my knowledge in this amazing field.
                     </p>
-                </div>
-                <div class="ProjPic">
-                    <a href="https://gamejolt.com/games/ghost_wingman/447085" class="ProjLink">VIEW</a>
-                    <img src="https://m.gjcdn.net/game-screenshot/1500/2484433-v3ekp8dw-v4.jpg" alt="Hackerman" class="ProjBgImg">
+                    <p>
+                        Several years have passed since I chose to become a programmer, and I am now a senior at Michigan State University. Soon I will enter the real world and 
+                        begin putting my skills to use. I hope that I can make the world a better place, and that I can continue to learn even more.
+                    </p>
+                    <p>
+                        This website was built as a means of teaching myself web development. I had some basic knowledge of HTML, CSS, and Javascript before, but I never really got deep into it,
+                        until now.
+                    </p>
+                    <p>Also, you may be wondering "Beedzo? What's a Beedzo?" Well... it was my childhood nickname.</p>
                 </div>
             </div>
-            <div class="ProjContainer" id="CretContainer">
-                <div class="ProjChild" style="background-color: green;">
-                    <h1>Cretaceous Companion</h1>
-                    <p>Cretaceous Companion is a game I helped create in my Intro to Game Design and Development class. 
-                        I mostly handled programming but helped out in various other aspects of the game as well. 
-                        This was the second group project of the class, and of the 8 games submitted by the whole class, was voted to be the most fun game. 
-                        Cretaceous Companion was also chosen as an "Outstanding Game Project" in Fall 2019.</p>
+        </div>
+        <div id="SkillsPage">
+            <img src="OutrunSun.png" alt="Hackerman" class="bgImg">
+            <div class="WelcomeText" style="width: 100%;">
+                <h1>SKILLS</h1>
+                <h3>Languages</h3>
+                <ul class="SkillsList">
+                    <li>Python</li>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>C#</li>
+                    <li>SQLite</li>
+                    <li>JavaScript</li>
+                    <li>Java</li>
+                    <li>HTML/CSS</li>
+                    <li>ARM Assembly</li>
+                </ul>
+                <h3>Game Engines/Game Tools</h3>
+                <ul class="SkillsList">
+                    <li>Unity</li>
+                    <li>Godot</li>
+                    <li>Source</li>
+                    <li>Unreal</li>
+                    <li>GameMaker Studio</li>
+                    <li>LithTech Talon</li>
+                </ul>
+                <h3>Other Software and Tools</h3>
+                <ul class="SkillsList">
+                    <li>GitHub</li>
+                    <li>UML</li>
+                    <li>Linux/Unix</li>
+                    <li>Blender (used to make all the backgrounds for this site)</li>
+                    <li>GIMP</li>
+                </ul>
+                <h3>Other Skills</h3>
+                <ul class="SkillsList">
+                    <li>Agile/SCRUM development</li>
+                    <li>3D modeling</li>
+                    <li>Game level design</li>
+                    <li>Strong teamwork skills</li>
+                    <li>Quick learner</li>
+                </ul>
+                <br>
+            </div>
+        </div>
+        <div id="ProjPage">
+            <div class="blur"></div>
+            <div class="PageTitle">
+                <h1>Projects</h1>
+            </div>
+            <br><br><br><br><br><br>
+            <div class="ProjPanel">
+                <div class="ProjScroller">
+                    <img src="https://raw.githubusercontent.com/walshb15/BestWorstWheel/master/demonstrationImage.png" alt="Best Worst Wheel" class="ScrollItem" onclick="openWheelProj()">
+                    <img src="https://m.gjcdn.net/game-screenshot/800/2484405-6dgwi5jm-v4.jpg" class="ScrollItem" alt="Wingman From the Other Side" onclick="openWingProj()">
+                    <img src="https://m.gjcdn.net/game-screenshot/800/2607759-zhfgwznv-v4.jpg" class="ScrollItem" alt="Cretaceous Companion" onclick="openCretProj()">      
                 </div>
-                <div class="ProjPic">
-                    <a href="https://gamejolt.com/games/Cretaceous_companion/455186" class="ProjLink">VIEW</a>
-                    <img src="https://m.gjcdn.net/game-header/2000/455186-crop0_201_960_441-u5mthe8a-v4.png" alt="Hackerman" class="ProjBgImg">
+                <div class="ProjContainer" id="WheelContainer">
+                    <div class="ProjChild" style="background-color: lawngreen;">
+                        <h1>Best Worst Wheel</h1>
+                        <p>A Wheel of Fortune style graphical selection wheel. 
+                            The user spins it, and it will eventually come to a stop on an item on the wheel. 
+                            The user can add or delete items from the wheel, as well as spin it. 
+                            Items that are added are stored in a local SQLite database, so they are loaded again when the user closes and reopens the program.</p>
+                    </div>
+                    <div class="ProjPic">
+                        <a href="https://github.com/walshb15/BestWorstWheel" class="ProjLink">VIEW</a>
+                        <img src="https://raw.githubusercontent.com/walshb15/BestWorstWheel/master/demonstrationImage.png" alt="Hackerman" class="ProjBgImg">
+                    </div>
+                </div>
+                <div class="ProjContainer" id="WingContainer">
+                    <div class="ProjChild" style="background-color: #FF1493;">
+                        <h1>Wingman From the Other Side</h1>
+                        <p>Voted as one of the most innovative game projects of MI445 in Fall semester 2019, Wingman from the Other Side is a
+                            physics based puzzle game built with Unity engine. You play as Laramie the ghost, whose job is to possess
+                            objects in each level to bring a couple together. I provided a lot of the underlying C# programming for the
+                            game's systems, and also helped with various other aspects of the game. I particularly enjoyed working on this game, and had a great experience with the team I worked
+                            on it with.
+                        </p>
+                    </div>
+                    <div class="ProjPic">
+                        <a href="https://gamejolt.com/games/ghost_wingman/447085" class="ProjLink">VIEW</a>
+                        <img src="https://m.gjcdn.net/game-screenshot/1500/2484433-v3ekp8dw-v4.jpg" alt="Hackerman" class="ProjBgImg">
+                    </div>
+                </div>
+                <div class="ProjContainer" id="CretContainer">
+                    <div class="ProjChild" style="background-color: green;">
+                        <h1>Cretaceous Companion</h1>
+                        <p>Cretaceous Companion is a game I helped create in my Intro to Game Design and Development class. 
+                            I mostly handled programming but helped out in various other aspects of the game as well. 
+                            This was the second group project of the class, and of the 8 games submitted by the whole class, was voted to be the most fun game. 
+                            Cretaceous Companion was also chosen as an "Outstanding Game Project" in Fall 2019.</p>
+                    </div>
+                    <div class="ProjPic">
+                        <a href="https://gamejolt.com/games/Cretaceous_companion/455186" class="ProjLink">VIEW</a>
+                        <img src="https://m.gjcdn.net/game-header/2000/455186-crop0_201_960_441-u5mthe8a-v4.png" alt="Hackerman" class="ProjBgImg">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
+    
 <script src="beedzo.js"></script>
 </body>
 </html>

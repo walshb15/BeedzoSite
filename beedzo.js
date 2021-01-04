@@ -15,7 +15,14 @@
 
     function openSidebar() {
         let side = document.getElementById("sideSections");
-        side.style.width = "20%";
+        if (screen.width <= 600)
+        {
+            side.style.width = "100%";
+        }
+        else
+        {
+            side.style.width = "20%";
+        }
         side.style.borderColor = "lightslategray";
         side.style.backgroundColor = "black";
         let items = document.getElementsByClassName("sidebarItems");
@@ -28,6 +35,7 @@
     }
 
     function openWelcome() {
+        checkSidebar();
         let root = document.documentElement;
         root.style.setProperty('--primaryColor', "#0055ff");
         root.style.setProperty('--shadowColor',  '#00fff9')
@@ -39,6 +47,13 @@
         closeSkills();
     }
 
+    function checkSidebar() {
+        let side = document.getElementById("sideSections");
+        if (side.style.width == '100%') {
+            closeSidebar();
+        }
+    }
+
     function closeWelcome() {
         let page = document.getElementById("WelcomePage");
         page.style.opacity = 0;
@@ -46,6 +61,7 @@
     }
 
     function openAbout() {
+        checkSidebar();
         let root = document.documentElement;
         root.style.setProperty('--primaryColor', "#ef4502");
         root.style.setProperty('--shadowColor',  '#f77b00')
@@ -64,6 +80,7 @@
     }
 
     function openProjects() {
+        checkSidebar();
         let root = document.documentElement;
         root.style.setProperty('--primaryColor', "#026b18");
         root.style.setProperty('--shadowColor',  '#00fcb4');
@@ -83,6 +100,7 @@
     }
 
     function openSkills() {
+        checkSidebar();
         let root = document.documentElement;
         root.style.setProperty('--primaryColor', "#8c1eff");
         root.style.setProperty('--shadowColor',  '#f222ff');

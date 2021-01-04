@@ -322,3 +322,18 @@ html, body {
 #CretContainer {
   height:0%;
 }
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 600px) {
+  
+  .sidebar {
+    transition: 0.01s;
+  }
+
+  .sidebarItems {
+    font-size: 400px;
+  }
+}

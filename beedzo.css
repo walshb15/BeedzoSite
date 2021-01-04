@@ -42,11 +42,16 @@ h1 {
   transition: 0.5s;
 }
 
+.sidebarItems h1 {
+  margin: 15px;
+  font-size: 1.4em;
+}
+
 .sidebarItems a {
   color: white;
   text-decoration: none;
   display: block;
-  padding-bottom: 5%;
+  padding: 5%;
 }
 
 .sidebarItems a:hover {
@@ -109,7 +114,7 @@ html, body {
   cursor: pointer;
   justify-content: right;
   right: 12px;
-  top: -8px;
+  top: 12px;
   font-family: sans-serif;
   font-size: 20px;
 }
@@ -325,15 +330,19 @@ html, body {
 
 @media screen and (max-width: 1024px) {
 
+  .sidebarItems h1 {
+    font-size: 1rem;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
   
   .sidebar {
-    transition: 0.01s;
+    transition: 0.1s;
   }
 
-  .sidebarItems {
-    font-size: 400px;
+  .sidebarItems h1 {
+    font-size: 2rem;
   }
 }

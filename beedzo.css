@@ -116,11 +116,12 @@ html, body {
   right: 12px;
   top: 12px;
   font-family: sans-serif;
-  font-size: 20px;
+  font-size: 30px;
+  transition: 0.3s;
 }
 
 #closebutt:hover {
-  background-color: lightslategray;
+  color: red;
 }
 
 #WelcomePage {
@@ -307,9 +308,19 @@ html, body {
   white-space: normal;
 }
 
+#SkillsText {
+  width: 100%;
+}
+
 .SkillsList {
-  text-align: left;
-  padding-left: 48%;
+  margin: 0 auto;
+  display: table;
+  list-style: none;
+  padding: 0;
+}
+
+.SkillsList li {
+  margin: 8px;
 }
 
 .ScrollItem:hover {
@@ -344,5 +355,9 @@ html, body {
 
   .sidebarItems h1 {
     font-size: 2rem;
+  }
+
+  .WelcomeText {
+    width: 90%;
   }
 }

@@ -93,7 +93,7 @@
     }
 
     function closeProjects() {
-        closeProjAll();
+        closeProjectModals();
         let page = document.getElementById("ProjPage");
         page.style.opacity = 0;
         page.style.visibility = "hidden";
@@ -120,6 +120,12 @@
         page.style.visibility = "hidden";
     }
 
+    /*function openCMSProj() {
+        let page = document.getElementById("Project_CMS");
+        openGenericProj(page);
+        closeSidebar();
+    }
+
     function openWheelProj() {
         let page = document.getElementById("WheelContainer");
         openGenericProj(page);
@@ -136,21 +142,24 @@
         let page = document.getElementById("CretContainer");
         openGenericProj(page);
         closeSidebar();
-    }
+    }*/
 
-    function openGenericProj(proj) {
-        if (proj.style.opacity != 1) {
+    function openGenericProj(sel) {
+        let proj = document.getElementById(sel);
+        proj.style.opacity = 1;
+        proj.style.visibility = "visible";
+        /*if (proj.style.opacity != 1) {
             proj.style.opacity = 1;
             proj.style.visibility = "visible";
-            proj.style.height = "100%";
+            //proj.style.height = "100%";
             closeProjOthers(proj);
         }
         else {
             closeProjSelf(proj);
-        }
+        }*/
     }
 
-    function closeProjSelf(page) {
+    /*function closeProjSelf(page) {
         page.style.opacity = 0;
         page.style.height = "0%";
         page.style.visibility = "hidden";
@@ -169,6 +178,14 @@
         let pages = document.getElementsByClassName("ProjContainer");
         for (i = 0; i < pages.length; ++i) {
             closeProjSelf(pages[i]);
+        }
+    }*/
+
+    function closeProjectModals() {
+        let projects = document.getElementsByClassName("ProjContainer");
+        for (i = 0; i < projects.length; ++i) {
+            projects[i].style.opacity = 0;
+            projects[i].style.visibility = "hidden";
         }
     }
 }

@@ -145,6 +145,8 @@
     }*/
 
     function openGenericProj(sel) {
+        //Close any open projects first
+        closeProjectModals();
         let proj = document.getElementById(sel);
         proj.style.opacity = 1;
         proj.style.visibility = "visible";

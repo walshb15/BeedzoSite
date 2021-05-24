@@ -161,12 +161,54 @@
                 </div>
             </div>
 
+            <div id="Project_Endothermic" class="ProjContainer">
+                <span class="projectCloseButton" onclick="closeProjectModals()">x</span>
+                <div class="ProjectInfo">
+                    <div class="projImg">
+                        <p>
+                            <img src="images/EndothermicGif.gif" alt="Endothermic Demonstration">
+                        </p>
+                    </div>
+                    <div class="projText">
+                        <h2>Endothermic</h2>
+                        <p>Created January 2021 – April 2021</p>
+                        <p>Endothermic is a single player first-person survival horror game where you must escape a heat absorbing monster that is infesting your spaceship. The gameplay consists of maintaining the power of your thermal camouflage suit and avoiding obstacles while you search for the resources necessary to repair the ship’s escape pod.</p>
+                        <p>This project was created for the capstone course of the game development 
+                            minor at Michigan State University. The game was developed by an 8-person 
+                            student team using the Unity engine. My main role in the project was that 
+                            of the lead programmer, where I had to provide direction as to what 
+                            systems needed to be programmed, and how the programming work should be 
+                            divided. The programming team only consisted of myself and one other 
+                            person. The small number of programmers presented numerous challenges 
+                            during development in how we needed to tackle creating large systems for 
+                            the game. One solution that allowed us to speed up development was to use 
+                            existing open-source libraries for some of the functionalities. For 
+                            instance, the first-person controls were done using the 
+                            <a href="https://assetstore.unity.com/packages/tools/input-management/first-person-all-in-one-135316" target="_blank" rel="noopener noreferrer">First Person All-in-One</a>
+                             package by Aedan Graves. 
+                            We also used the 
+                            <a href="https://github.com/andersonaddo/EZ-Camera-Shake-Unity" target="_blank" rel="noopener noreferrer">EZ Camera Shake library</a>
+                             by Anderson Addo to add in camera shaking effects for greater 
+                             immersion when the player was damaged. However, many of the other 
+                             systems had to be created from scratch by myself and the other 
+                             programmer on the team.</p>
+                            <p>In terms of the systems I created; much of my work was spent on the antagonist of the game. The monster that would be terrorizing the player was rather unusual in concept for this type of game, with it being more of something that grows and changes the environment, rather than chasing the player around. Implementing such an entity in code was no easy task. The designers gave me a general idea of what they wanted it to do, and I had to figure out what I could and couldn’t do with the engine to get it working. The monster spreads itself throughout the level via spores, which traverse the level and begin infesting rooms around the level, which can then spread more spores. Infested rooms begin spawning hazards that either drain the heat of the room or attack the player. When developing my solutions to the design specifications, I had to really communicate with the design team and figure out how specifically they wanted everything to work. Once I had the specifics down, I was able to come up with a game plan. For the rooms in the level, I came up with a room class that had variables for temperature and whether it was infested or not. For the monster spores, I had to figure out a good way for them to look for a desirable room to infest that was not already targeted by another spore, and I had to figure how to make them navigate through the level to get to their intended room. There was also a matter of getting the structures in the level to spawn, and how to allow the level designers to easy decide where they wanted the structures to appear at. To solve this issue, I came up with a node based spawning system, where each enemy structure had its own node which could be placed and rotated at any spot in the level, and the node would automatically assign itself to the room it was placed closest to. When the room became infested, the nodes would then be turned into enemy structures. This implementation worked fantastic and made the job of level design much easier for other members of the team. Everything involving the enemy of the game was a challenge to implement, but I am quite happy with what I accomplished. There are quite a few other systems I created as well for the game though.</p>
+                            <p>Several other systems in the game were coded by me as well. There was a system for interactable objects in the level that I created from scratch. Basically, if there was a button on the wall, you could press it to open a door, or you could also use that system to open computer terminals and read some text that would give you insight into what was going on in the plot. I also provided the initial implementation of the temperature system for the game, and handed it off to the other programmer on the team for refinement once I had created a good base for it. There were also plenty of other small miscellaneous things I coded up throughout the project.</p>
+                            <p>My work was not solely confined to programming, however. Throughout development, I gave a ton of insight and ideas as to where I thought the game should go. I came up with a lot of ideas for the design, even though I wasn’t officially a designer. If I saw a perceived issue, I would bring it up to the whole team, and would facilitate discussions as to how and who we needed to fix the issue. I also did all of the writing for the backstory and plot of the game. I even created some placeholder 3D models during a certain phase of development. I gave my all to this project, and helped out in any way I could, even if it was not specifically my job.</p>
+                        <p class="projectLinks">
+                            <a class="projectLink" href="https://www.youtube.com/watch?v=6n6LqKLW12s" target="_blank" rel="noopener noreferrer">Trailer</a>
+                            <a class="projectLink" href="https://graysonbac.itch.io/endothermic" target="_blank" rel="noopener noreferrer">Project Page</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
             <div id="Project_Wheel" class="ProjContainer">
                 <span class="projectCloseButton" onclick="closeProjectModals()">x</span>
                 <div class="ProjectInfo">
                     <div class="projImg">
                         <p>
-                            <img src="https://raw.githubusercontent.com/walshb15/BestWorstWheel/master/demonstrationImage.png" alt="Best Worst Wheel Demonstration">
+                            <img src="images/BestWorstWheel.gif" alt="Best Worst Wheel Demonstration">
                         </p>
                     </div>
                     <div class="projText">
@@ -187,7 +229,7 @@
                 <div class="ProjectInfo">
                     <div class="projImg">
                         <p>
-                            <img src="https://m.gjcdn.net/game-screenshot/1500/2484433-v3ekp8dw-v4.jpg" alt="Wingman Demonstration">
+                            <img src="images/WingmanDemo.gif" alt="Wingman Demonstration">
                         </p>
                     </div>
                     <div class="projText">
@@ -199,8 +241,9 @@
                             on it with.
                         </p>
                         <p class="projectLinks">
+                            <a class="projectLink" href="https://www.youtube.com/watch?v=_eaMlD-rfe4" target="_blank" rel="noopener noreferrer">Trailer</a>
                             <a class="projectLink" href="https://itch.io/b/741/msu-gamedev-charity-bundle" target="_blank" rel="noopener noreferrer">Game Page (Charity)</a>
-                            <a class="projectLink" href="https://gamejolt.com/games/ghost_wingman/447085" target="_blank" rel="noopener noreferrer">Game Page (GameJolt)</a>
+                            <a class="projectLink" href="https://gamejolt.com/games/ghost_wingman/447085" target="_blank" rel="noopener noreferrer">Game Page (Outdated GameJolt Version)</a>
                         </p>
                     </div>
                 </div>
@@ -211,7 +254,7 @@
                 <div class="ProjectInfo">
                     <div class="projImg">
                         <p>
-                            <img src="https://m.gjcdn.net/game-header/2000/455186-crop0_201_960_441-u5mthe8a-v4.png" alt="Cretaceous Companion Demonstration">
+                            <img src="images/CC_Demo.gif" alt="Cretaceous Companion Demonstration">
                         </p>
                     </div>
                     <div class="projText">
@@ -230,6 +273,7 @@
             <div class="ProjPanel">
                 <div class="ProjScroller">
                     <img src="images/United-CMS.png" alt="Tech Ops Training Content Management System" class="ScrollItem" onclick="openGenericProj('Project_CMS')" width="1920" height="1080">
+                    <img src="images/EndothermicPoster.jpg" alt="Endothermic Poster" class="ScrollItem" onclick="openGenericProj('Project_Endothermic')" width="3720" height="2650">
                     <img src="https://raw.githubusercontent.com/walshb15/BestWorstWheel/master/demonstrationImage.png" alt="Best Worst Wheel" class="ScrollItem" onclick="openGenericProj('Project_Wheel')">
                     <img src="https://m.gjcdn.net/game-screenshot/800/2484405-6dgwi5jm-v4.jpg" class="ScrollItem" alt="Wingman From the Other Side" onclick="openGenericProj('Project_Wingman')">
                     <img src="https://m.gjcdn.net/game-screenshot/800/2607759-zhfgwznv-v4.jpg" class="ScrollItem" alt="Cretaceous Companion" onclick="openGenericProj('Project_Companion')">      

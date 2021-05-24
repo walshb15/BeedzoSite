@@ -289,6 +289,7 @@ html, body {
 
 .ProjectInfo {
   display: flex;
+  flex-direction: row;
   width: 100%;
   height: 90%;
   overflow: auto;
@@ -311,12 +312,22 @@ html, body {
   padding: 10px;
 }
 
+.projectLinks {
+  line-height: 2.55;
+}
+
 .projectLink {
   color: white;
   text-decoration: none;
   padding: 10px;
   margin-top: 20px;
   background-color: green;
+  white-space: nowrap;
+}
+
+.projectLink:hover {
+  background-color: white;
+  color: black;
 }
 
 .ProjChild {
@@ -437,5 +448,37 @@ html, body {
 
   .WelcomeText {
     width: 90%;
+  }
+
+  .ProjPanel {
+    height: 78%;
+  }
+
+  .ProjScroller {
+    overflow-y: auto;
+    white-space: normal;
+    width: 96%;
+    height: 100%;
+  }
+
+  .ScrollItem {
+    height: auto;
+    width: 100%;
+  }
+
+  .ProjectInfo {
+    flex-direction: column;
+  }
+
+  .projImg {
+    flex: 100%;
+  }
+
+  .projText {
+    flex: 100%;
+  }
+
+  .ProjContainer {
+    width: 86vw;
   }
 }

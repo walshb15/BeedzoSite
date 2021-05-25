@@ -1,7 +1,8 @@
 {
     function closeSidebar() {
         let side = document.getElementById("sideSections");
-        side.style.width = "0%";
+        side.style.display = "none";
+        //side.style.width = "0%";
         side.style.borderColor = "transparent";
         side.style.backgroundColor = 'transparent';
         let items = document.getElementsByClassName("sidebarItems");
@@ -15,14 +16,16 @@
 
     function openSidebar() {
         let side = document.getElementById("sideSections");
-        if (screen.width <= 600)
+        /*if (screen.width <= 600)
         {
             side.style.width = "100%";
         }
         else
         {
             side.style.width = "20%";
-        }
+        }*/
+        side.style.display = "block";
+        //side.style.width = getComputedStyle(document.documentElement).getPropertyValue('--sidebarWidth');
         side.style.borderColor = "lightslategray";
         side.style.backgroundColor = "black";
         let items = document.getElementsByClassName("sidebarItems");

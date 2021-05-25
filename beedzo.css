@@ -481,4 +481,8 @@ html, body {
   .ProjContainer {
     width: 86vw;
   }
+
+  .shadow {
+    font-size: 6.4vh;
+  }
 }

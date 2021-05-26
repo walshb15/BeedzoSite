@@ -211,6 +211,10 @@ html, body {
   visibility: hidden;
 }
 
+#skillsBg {
+  opacity: 0.75;
+}
+
 #ProjPage {
   position: relative;
   z-index: 9;

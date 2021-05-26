@@ -52,7 +52,9 @@
 
     function checkSidebar() {
         let side = document.getElementById("sideSections");
-        if (side.style.width == '100%') {
+        //Close the sidebar if the user selected something and
+        //it is taking up more than half of the viewport
+        if (side.offsetWidth > window.innerWidth / 2) {
             closeSidebar();
         }
     }

@@ -442,6 +442,10 @@ html, body {
     font-size: 1rem;
   }
 
+  #aboutBg {
+    object-position: left;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
